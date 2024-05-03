@@ -27,3 +27,23 @@ print("Your mission is to find the treasure.")
 
 #Write your code below this line 👇
 
+print("Welcome to Treasur Island.\nYour mission is to find the treasure.")
+choice_1 = input("You come across a cross path. Where do you want to go? Type 'left' or 'right'\n").lower()
+if choice_1 == 'right':
+    print("You fell down a cliff. GAME OVER.")
+    quit()
+else:
+    pass
+choice_2 = input("There is a river. What do you do? Type 'swim' or 'wait'\n").lower()
+if choice_2 == 'swim':
+    print("You were eaten. GAME OVER.")
+    quit()
+else:
+    pass
+choice_3 = input("You come across a room with 3 doors. Which door do you pick? Type 'red', 'yellow', or 'blue' \n").lower()
+if choice_3 == 'red' or choice_3 == 'blue':
+    print("You fell into spikes. GAME OVER.")
+    quit()
+else:
+    print("Congrats, you found the treasure!!")
+
